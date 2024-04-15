@@ -1,0 +1,10 @@
+body{
+    background-color:violet;
+    color: darkblue;
+    font-style: italic;
+    padding: 10px;
+}
+.img {
+    border-radius: 25px;
+
+}
