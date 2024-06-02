@@ -1,10 +1,452 @@
-body{
+body {
     background-color:violet;
     color: darkblue;
     font-style: italic;
     padding: 10px;
 }
-.img {
-    border-radius: 25px;
+
+.container {
+ 
+    
+    height: fit-content;
+}
+
+
+.nav {
+    margin-left: 70%;
+    gap: 8px;
+    padding: 20px;
+    color: azure;
+   
 
 }
+.photo{
+  float: right;
+  height: fit-content;
+  width: fit-content;      
+}
+.photo img{
+  border-radius: 60%;
+  
+}
+
+
+.nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.about p {
+    font-style: italic;
+font-size: 30px;
+width: 70%;
+}
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+
+     
+    /* ABOUT ME */
+
+  
+    @keyframes waviy {
+      0%,40%,100% {
+        transform: translateY(0)
+      }
+      20% {
+        transform: translateY(-20px)
+      }
+    }
+    .title span{
+      font-size: 70px;
+    }
+    .title-word {
+      animation: color-animation 4s linear infinite;
+    }
+    
+    .title-word-1 {
+      --color-1: lightcyan;
+      --color-2: #c6f50b;
+      --color-3: #f19b79;
+    }
+    
+    .title-word-2 {
+      --color-1: #275562;
+      --color-2: #f47a7e;
+      --color-3: #bc94ea58;
+    }
+    
+    .title-word-3 {
+      --color-1: #e7ea33;
+      --color-2: #610b0a;
+      --color-3: #ACCFCB;
+    }
+    
+    .title-word-4 {
+      --color-1: #3D8DAE;
+      --color-2: #DF8453;
+      --color-3: #E4A9A8;
+    }
+    
+    @keyframes color-animation {
+      0%    {color: var(--color-1)}
+      32%   {color: var(--color-1)}
+      33%   {color: var(--color-2)}
+      65%   {color: var(--color-2)}
+      66%   {color: var(--color-3)}
+      99%   {color: var(--color-3)}
+      100%  {color: var(--color-1)}
+    }
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+    display: grid;
+
+    text-align: left;
+    height: 100px;
+
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: #151719;
+    border-radius: 100px;
+    color:lightcyan;
+    margin: 20px;
+    padding: 10px;
+    
+}
+/* MY SKILLS */
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+    
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color:#fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+
+
+Resources
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.title-word {
+animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+--color-1: #DF8453;
+--color-2: #3D8DAE;
+--color-3: #E4A9A8;
+}
+
+.title-word-2 {
+--color-1: #DBAD4A;
+--color-2: #ACCFCB;
+--color-3: #17494D;
+}
+
+.title-word-3 {
+--color-1: #ACCFCB;
+--color-2: #E4A9A8;
+--color-3: #ACCFCB;
+}
+
+.title-word-4 {
+--color-1: #3D8DAE;
+--color-2: #DF8453;
+--color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+0% {
+    color: var(--color-1)
+}
+
+32% {
+    color: var(--color-1)
+}
+
+33% {
+    color: var(--color-2)
+}
+
+65% {
+    color: var(--color-2)
+}
+
+66% {
+    color: var(--color-3)
+}
+
+99% {
+    color: var(--color-3)
+}
+
+100% {
+    color: var(--color-1)
+}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+display: grid;
+
+text-align: left;
+height: 100px;
+
+}
+
+.title {
+font-family: "Montserrat", sans-serif;
+font-weight: bolder;
+font-size: 40px;
+text-transform: uppercase;
+}
+/* my skills */
+.ht{
+  font-size: larger;
+  padding: 20px;
+  margin: 10px;
+}
+.ht{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.white{
+    color: #000000;
+    background: #FFFFFF;
+}
+.dark-grey{
+    background: #616161;
+}
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  /* end my skills */
+/* PORTFOLIO */
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+     
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+.job-image{
+height: 30%;
+width:70%;
+margin: 30px;
+}
+.description{
+    margin: 20px;
+    
+} 
+.description p{
+    font-size: larger;
+}   
+/* end portfolio */
+/* starts contact me */
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  .contact-section {
+    margin-top: 30px;
+    font-size: 30px;
+    animation: lights 5s 750ms linear infinite;
+    padding-bottom: 50px;
+  }
+  .cs1{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+
+  }
+  .cs2{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+  }
+  .cs3{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+/*.......End contact.......*/
+
+.menu{
+  float: left;
+  width: 35%;
+}
+.main{
+  float: left;
+  width: 35%;
+}
+.right{
+  float: left;
+  width: auto;
+}
+.social-link i{
+  font-size: 30px;
+  padding: 5px;
+}
+.social-link{
+  text-align: center;
+}
+@media(max-width:500px) {
+  /* For mobile phones: */
+  .social-link{
+    text-align: center;
+    
+  }
+  .mail{
+    margin-left: 110px
+  }
+  
+}
+.mail{
+  text-align: center;
+  text-decoration: underline;
+  
+  font-size: 25px;
+  padding: 10px;
+}
+.mail p{
+  color: white;
+  
+}
+@media(max-width:320px)
+{
+  .contact-section h2{
+    font-size: auto;
+  }
+}
+
